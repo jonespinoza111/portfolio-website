@@ -24,7 +24,22 @@ const buttonColors = {
   },
 };
 
-const CustomButton = ({ type, text, icon, btnColor, onClick }) => {
+const buttonSizes = {
+  small: {
+    fontSize: "text-sm",
+    width: "w-[210px]",
+  },
+  medium: {
+    fontSize: "text-base",
+    width: "w-[240px]",
+  },
+  large: {
+    fontSize: "text-lg",
+    width: "w-[270px]",
+  },
+};
+
+const CustomButton = ({ type, text, icon, btnColor, size = "medium", onClick }) => {
   return (
     <div className="button-container" onClick={onClick}>
       {type === "1" && (
@@ -36,7 +51,7 @@ const CustomButton = ({ type, text, icon, btnColor, onClick }) => {
       )}
       {type === "2" && (
         <div
-          className={`button-2 ${buttonColors[btnColor].bg} cursor-pointer z-0 flex flex-row ${buttonColors[btnColor].text} border-[3px] border-solid ${buttonColors[btnColor].border}`}
+          className={`button-2 flex flex-row cursor-pointer ${buttonColors[btnColor].bg} ${buttonColors[btnColor].text} border-[3px] border-solid ${buttonColors[btnColor].border} ${buttonSizes[size].width} ${buttonSizes[size].fontSize} z-0`}
           onClick={onClick}
         >
           {icon && <FontAwesomeIcon icon={icon} />}

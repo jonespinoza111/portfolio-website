@@ -18,7 +18,7 @@ const Projects = () => {
             {["laptop", "car", "dog", "dog", "car", "laptop"].map((card, index) => (
                 <div
                 key={index}
-                className="card bg-blue-200 text-black container-box-shadow w-[325px] h-[350px] flex flex-col-reverse my-5 mx-2 cursor-pointer"
+                className="card bg-white text-black container-box-shadow w-[325px] h-[350px] flex flex-col-reverse my-5 mx-2 cursor-pointer"
                 onClick={() => navigate(`/project/${index+1}`)}
                 >
                 <div className="w-full h-[25%]">
