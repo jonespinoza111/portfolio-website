@@ -14,10 +14,10 @@ const Navbar = () => {
         <Link to="/home">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        {/* <Link to="/contact">Contact</Link> */}
       </div>
       <div className="button hidden sm:flex ">
-        <CustomButton type="1" text="Click Here" />
+        <CustomButton type="1" text="Contact Me" />
       </div>
       <div
         className="burger-icon sm:hidden flex text-s h-auto w-auto p-2 bg-white-500 cursor-pointer"
@@ -45,11 +45,11 @@ const Navbar = () => {
             Projects
           </Link>
         </div>
-        <div className="w-auto">
+        {/* <div className="w-auto">
           <Link to="/cancel" onClick={() => setToggleDrawer(false)}>
             Cancel
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

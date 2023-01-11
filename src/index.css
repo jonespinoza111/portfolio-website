@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
 /* a {
     box-shadow: inset 0 0 0 0 #54b3d6;
@@ -343,4 +344,25 @@
     /* box-shadow: rgba(106, 243, 255, 0.49) 0px 10px 20px, rgba(255, 255, 255, 0.49) 0px 0px 100px; */
 
     box-shadow: rgba(106, 243, 255, 0.49) 0px 5px 10px, rgba(255, 255, 255, 0.49) 0px 0px 30px;
+}
+
+
+.tag-is-active {
+    background-color: rgba(2555, 255, 255, 0.8);
+}
+
+
+.bootstrap-tabs-component .nav-link {
+    color: white !important;
+}
+
+.bootstrap-tabs-component .active {
+    color: black !important;
+}
+
+.front-section {
+    background-image: url('../src/assets/wave-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 500px; */
 }
