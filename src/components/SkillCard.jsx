@@ -9,8 +9,8 @@ const SkillCard = ({ skill }) => {
             <FontAwesomeIcon className='text-[50px] text-red-200' icon={skill.icon} />
         </div>
         <div className='border-t-[1px] border-white border-solid pb-4'>
-            <h3 className="pl-5 pt-2">{skill.name}</h3>
-            <p className="pl-5 pt-2 text-[10px]">{skill.description}</p>
+            <h3 className="pl-5 pt-2 text-[20px]">{skill.name}</h3>
+            <p className="pl-5 pt-2 text-[14px]">{skill.description}</p>
         </div>
     </div>
   )

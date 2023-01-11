@@ -49,14 +49,7 @@ const Projects = () => {
     <div className="w-100 h-screen color-1">
       <section className="color-1 h-auto min-h-full flex flex-col items-center py-5 px-10 md:px-[200px] px-[20px]">
         <div className="w-full h-auto color-1 py-10">
-          {/* <div className="w-full h-auto flex flex-col md:flex-row gap-2">
-            {["Projects", "React", "Solidity", "Front-End", "Full-Stack"].map(
-              (tag, index) => (
-                <Tag tag={tag} key={index} />
-              )
-            )}
-          </div> */}
-          <h3 className='text-white font-semibold text-2xl w-full mb-8'>Projects</h3>
+          <h3 className='text-white font-semibold md:text-3xl text-2xl w-full mb-8'>Projects</h3>
           <div>
             <Tabs tabs={tabs} type="tabs"e />
           </div>
@@ -68,14 +61,14 @@ const Projects = () => {
                   className="card bg-white text-black container-box-shadow w-[325px] h-[350px] flex flex-col-reverse my-5 mx-4 cursor-pointer rounded-lg hover:scale-105 transition-all duration-200"
                   onClick={() => navigate(`/project/${index + 1}`)}
                 >
-                  <div className="w-full h-[25%]">
-                    <h3 className="pl-5 pt-2 font-semibold">Solidity</h3>
-                    <p className="pl-5 pt-2 text-[10px] font-medium">
+                  <div className="w-full h-[30%]">
+                    <h3 className="pl-5 pt-2 font-semibold text-xl">Solidity</h3>
+                    <p className="pl-5 pr-2 pt-2 font-medium text-[15px]">
                       Lorem Ipsum is simply dummy text of the printing and
                       typesetting industry.
                     </p>
                   </div>
-                  <div className="img-container w-full h-[75%]">
+                  <div className="img-container w-full h-[70%]">
                     <img
                       src={`src/assets/${card}.jpg`}
                       className="w-full h-full rounded-t-lg"

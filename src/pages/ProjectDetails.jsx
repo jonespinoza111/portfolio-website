@@ -15,10 +15,10 @@ const ProjectDetails = () => {
       <CustomButton type="2" text="Back" btnColor="red" size="small" icon={faArrowLeft} onClick={previousPage} />
       <div className='w-full h-auto flex flex-row justify-center pt-[50px]'>
         <div className='project-details-card flex flex-col lg:flex-row color-1 bg-opacity-20 md:w-[80%] w-[300px] lg:h-[500px] h-auto box-shadow-2 rounded-2xl'>
-            <div className='lg:w-[35%] md:w-[100%] lg:h-full md:h-[50%] h-[400px] bg-color-1 bg-gray-700 bg-opacity-60 lg:rounded-2xl rounded-t-2xl'>
-                <img src='../src/assets/website-1.png' className='w-full h-full lg:rounded-2xl rounded-t-2xl' />
+            <div className='lg:w-[45%] md:w-[100%] lg:h-full md:h-[50%] h-[400px] bg-color-1 bg-gray-700 bg-opacity-60 lg:rounded-r-2xl rounded-t-2xl'>
+                <img src='../src/assets/website-1.png' className='w-full h-full lg:rounded-r-none lg:rounded-l-2xl rounded-t-2xl' />
             </div>
-            <div className='lg:w-[65%] w-full lg:h-full md:h-[50%] h-auto bg-gray-700 bg-opacity-60 text-white flex flex-col justify-evenly gap-5 px-10 py-10'>
+            <div className='lg:w-[55%] w-full lg:h-full md:h-[50%] h-auto bg-gray-700 bg-opacity-60 text-white flex flex-col justify-evenly gap-5 px-10 py-10'>
                 <div>
                     <h2 className='font-bold text-4xl'>ChatWithUs</h2>
                 </div>

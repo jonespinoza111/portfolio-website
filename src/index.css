@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
  
+* {
+    font-family: Calibri, sans-serif;
+}
+.font-2 {
+    font-family: Cambria, serif;
+}
 
 /* a {
     box-shadow: inset 0 0 0 0 #54b3d6;
@@ -287,28 +293,28 @@
 .btn .fa {
   transform: scale(0.8);
 }
-.btn.facebook:before {
+.btn.github:before {
   /* background-color: #3b5998; */
   background-color: #171515;
 
 }
-.btn.facebook .fa {
+.btn.github .fa {
   /* color: #3b5998; */
   color: #171515;
   
 }
-.btn.twitter:before {
+.btn.linkedin:before {
   /* background-color: #3cf; */
   background-color: #0072b1;
 }
-.btn.twitter .fa {
+.btn.linkedin .fa {
   /* color: #3cf; */
   color: #0072b1;
 }
-.btn.google:before {
+.btn.gmail:before {
   background-color: #dc4a38;
 }
-.btn.google .fa {
+.btn.gmail .fa {
   color: #dc4a38;
 }
 .btn.dribbble:before {
@@ -354,6 +360,7 @@
 
 .bootstrap-tabs-component .nav-link {
     color: white !important;
+    font-size: 18px;
 }
 
 .bootstrap-tabs-component .active {

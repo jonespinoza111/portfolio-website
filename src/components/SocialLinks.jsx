@@ -6,16 +6,20 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const SocialLinks = () => {
   return (
     <div className="social-media-buttons flex flex-row items-center justify-center gap-6">
-        {['facebook', 'twitter', 'google'].map((num, index) => (
+        {['github', 'linkedin', 'gmail'].map((num, index) => (
           <div key={index} className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`}>
-            {num === "facebook" && (
-              <FontAwesomeIcon className="fa" icon={faGithubAlt} />
+            {num === "github" && (
+                <a href="https://github.com/jonespinoza111" target="_blank">
+                    <FontAwesomeIcon className="fa" icon={faGithubAlt} />
+                </a>
             )}
-            {num === "twitter" && (
+            {num === "linkedin" && (
               <FontAwesomeIcon className="fa" icon={faLinkedinIn} />
             )}
-            {num === "google" && (
-              <FontAwesomeIcon className="fa" icon={faEnvelope} />
+            {num === "gmail" && (
+                 <a href="mailto:jonespinoza111@gmail.com">
+                     <FontAwesomeIcon className="fa" icon={faEnvelope} />
+                 </a> 
             )}
           </div>
         ))}
