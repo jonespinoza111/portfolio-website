@@ -7,6 +7,7 @@ import {
   faReact,
   faSquareJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 const skills = [
   {
@@ -30,9 +31,10 @@ const skills = [
     description: "Front-end JS Framework",
   },
   {
-    name: "Solidity",
-    icon: faReact,
-    description: "OOP Language for Blockchains",
+    name: "MongoDB",
+    icon: faDatabase,
+    description: "Document Database Program"
+
   },
   {
     name: "NodeJS",
@@ -91,7 +93,7 @@ const About = () => {
               programming technologies and languages. Front-end is my specialty,
               but I can also build a reliable back-end to go along with an app.
               I will use all the tools available at my disposal to make a fully
-              functional website for you
+              functional website for you.
             </p>
           </div>
         </div>

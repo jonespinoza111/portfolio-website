@@ -39,7 +39,7 @@ const buttonSizes = {
   },
 };
 
-const CustomButton = ({ type, text, icon, btnColor, size = "medium", onClick }) => {
+const CustomButton = ({ type, text, icon, btnColor, size = "medium", onClick, link }) => {
   return (
     <div className="button-container" onClick={onClick}>
       {type === "1" && (
@@ -50,13 +50,15 @@ const CustomButton = ({ type, text, icon, btnColor, size = "medium", onClick }) 
         </div>
       )}
       {type === "2" && (
-        <div
-          className={`button-2 flex flex-row cursor-pointer ${buttonColors[btnColor].bg} ${buttonColors[btnColor].text} border-[3px] border-solid ${buttonColors[btnColor].border} ${buttonSizes[size].width} ${buttonSizes[size].fontSize} z-0`}
-          onClick={onClick}
-        >
-          {icon && <FontAwesomeIcon icon={icon} />}
-          <span className="ml-5">{text}</span>
-        </div>
+        <a href={`${link}`} target="_blank">
+          <div
+            className={`button-2 flex flex-row cursor-pointer ${buttonColors[btnColor].bg} ${buttonColors[btnColor].text} border-[3px] border-solid ${buttonColors[btnColor].border} ${buttonSizes[size].width} ${buttonSizes[size].fontSize} z-0`}
+            onClick={onClick}
+            >
+            {icon && <FontAwesomeIcon icon={icon} />}
+            <span className="ml-5">{text}</span>
+          </div>
+        </a>
       )}
       {type === "3" && (
         <div className={`cursor-pointer btn button-3`} onClick={onClick}>
@@ -65,6 +67,15 @@ const CustomButton = ({ type, text, icon, btnColor, size = "medium", onClick }) 
           </svg>
           <FontAwesomeIcon icon={icon} />
           {text}
+        </div>
+      )}
+      {type === "4" && (
+        <div
+          className={`button-2 flex flex-row cursor-pointer ${buttonColors[btnColor].bg} ${buttonColors[btnColor].text} border-[3px] border-solid ${buttonColors[btnColor].border} ${buttonSizes[size].width} ${buttonSizes[size].fontSize} z-0`}
+          onClick={onClick}
+          >
+          {icon && <FontAwesomeIcon icon={icon} />}
+          <span className="ml-5">{text}</span>
         </div>
       )}
     </div>

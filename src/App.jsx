@@ -12,6 +12,7 @@ function App() {
     <div className="App relative bg-black min-h-screen flex flex-col">
       <Navbar />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />

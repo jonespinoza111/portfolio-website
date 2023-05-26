@@ -11,9 +11,9 @@ const Navbar = () => {
     <div className="bg-white text-black flex sm:flex-row items-center justify-between w-full h-16 md:px-10 px-5">
       <div className="logo font-semibold">JONATHAN-ESPINOZA</div>
       <div className="links sm:flex sm:flex-row align-items space-x-10 hidden text-[18px]">
-        <Link to="/home">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
+        <Link id="nav-link" to="/home">Home</Link>
+        <Link id="nav-link" to="/about">About</Link>
+        <Link id="nav-link" to="/projects">Projects</Link>
         {/* <Link to="/contact">Contact</Link> */}
       </div>
       <div className="button hidden sm:flex ">
