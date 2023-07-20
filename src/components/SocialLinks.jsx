@@ -2,27 +2,32 @@ import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubAlt, faLinkedinIn, } from '@fortawesome/free-brands-svg-icons' 
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import SlideMotion from './SlideMotion';
 
 const SocialLinks = () => {
   return (
     <div className="social-media-buttons flex flex-row items-center justify-center gap-6">
+      <SlideMotion direction={'up'}>
         {['github', 'linkedin', 'gmail'].map((num, index) => (
-          <div key={index} className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`}>
+          <>
             {num === "github" && (
-                <a href="https://github.com/jonespinoza111" target="_blank">
+                <a key={index} href="https://github.com/jonespinoza111" className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`} target="_blank">
                     <FontAwesomeIcon className="fa" icon={faGithubAlt} />
                 </a>
             )}
             {num === "linkedin" && (
-              <FontAwesomeIcon className="fa" icon={faLinkedinIn} />
+              <a  key={index} href="#" className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`}>
+                <FontAwesomeIcon className="fa" icon={faLinkedinIn} />
+              </a>
             )}
             {num === "gmail" && (
-                 <a href="mailto:jonespinoza111@gmail.com">
+                 <a  key={index} href="mailto:jonespinoza111@gmail.com" className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`}>
                      <FontAwesomeIcon className="fa" icon={faEnvelope} />
                  </a> 
             )}
-          </div>
+          </>
         ))}
+      </SlideMotion>
       </div>
   )
 }

@@ -41,9 +41,9 @@ const buttonSizes = {
 
 const CustomButton = ({ type, text, icon, btnColor, size = "medium", onClick, link }) => {
   return (
-    <div className="button-container" onClick={onClick}>
+    <div className="button-container">
       {type === "1" && (
-        <div className="w-full max-w-[180px] cursor-pointer">
+        <div className="w-full max-w-[180px] cursor-pointer" onClick={onClick}>
           <div className={`button-1 w-auto`}>
             <span className="button-span">{text}</span>
           </div>

@@ -17,13 +17,19 @@ export const projectData = [
       ],
       github: "https://github.com/jonespinoza111/react-chat",
       link: "https://chat-with-us.netlify.app/",
-      tags: ["React", "Full-Stack"]
+      tags: ["All", "React", "Full-Stack"],
+      images: [
+        "chat-with-us-1.png",
+        "chat-with-us-2.png",
+        "chat-with-us-3.png",
+        "chat-with-us-4.png",
+      ]
     },
     {
       id: 2,
       title: "Hot Star Hunan Grill",
       description:
-        "A react app for a Chinese restaurant with a full menu and allows online ordering.",
+        "A react app for a Chinese restaurant with a full menu and online ordering.",
       features: [
         "Landing Page",
         "Food Menu",
@@ -35,13 +41,21 @@ export const projectData = [
       ],
       github: "https://github.com/jonespinoza111/react-restaurant",
       link: "https://hot-star-hunan-grill.netlify.app/",
-      tags: ["React", "Full-Stack"]
+      tags: ["All", "React", "Full-Stack"],
+      images: [
+        "hot-star-1.png",
+        "hot-star-2.png",
+        "hot-star-3.png",
+        "hot-star-4.png",
+        "hot-star-5.png",
+        "hot-star-6.png",
+      ]
     },
     {
       id: 3,
       title: "React Recipes",
       description:
-        "This is a React Native app that uses recipes to make it easier",
+        "A React Native app that uses the Spoonacular API to display instructions for cooking recipes.",
       features: [
         "Login and Sign Up Forms",
         "Async Storage",
@@ -56,6 +70,47 @@ export const projectData = [
       ],
       github: "https://github.com/jonespinoza111/rn-recipes",
       link: "",
-      tags: ["React", "React-Native"]
+      tags: ["All", "React", "React-Native"],
+      images: [
+        "rn-recipes-1.png",
+        "rn-recipes-2.png",
+        "rn-recipes-3.png",
+        "rn-recipes-4.png",
+        "rn-recipes-5.png",
+        "rn-recipes-6.png",
+        "rn-recipes-7.png",
+        "rn-recipes-8.png",
+        "rn-recipes-9.png",
+        "rn-recipes-10.png",
+      ]
+
+    },
+    {
+      id: 4,
+      title: "BookBox",
+      description:
+        "A React app that uses the Google Books API to display info. on books and create lists.",
+      features: [
+        "AWS",
+        "Amazon Cognito",
+        "Amplify Datastore",
+        "GraphQL API",
+        "Google Books API",
+        "Create lists",
+        "Search for books",
+        "Write reviews",
+      ],
+      github: "https://github.com/jonespinoza111/bookbox",
+      link: "https://dev.d3supdqhny5bev.amplifyapp.com",
+      tags: ["All", "React", "AWS"],
+      images: [
+        "bookbox-1.png",
+        "bookbox-2.png",
+        "bookbox-3.png",
+        "bookbox-4.png",
+        "bookbox-5.png",
+        "bookbox-6.png",
+        "bookbox-7.png",
+      ]
     },
   ];
