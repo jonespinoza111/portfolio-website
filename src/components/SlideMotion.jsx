@@ -3,11 +3,11 @@ import { useEffect, useRef } from "react";
 
 const SlideVariant = {
   up: {
-    hidden: { opacity: 0, y: 75 },
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 }
   },
   down: {
-    hidden: { opacity: 0, y: -75 },
+    hidden: { opacity: 0, y: -50 },
     visible: { opacity: 1, y: 0 }
   },
   left: {
