@@ -34,7 +34,7 @@ const Home = () => {
         </section>
       </SlideMotion>
       <SocialLinks />
-        <div className="flex justify-center items-center mt-40 mb-10 font-extralight">
+        <div className="flex justify-center items-center mt-40 mb-10 font-extralight  mx-5">
         <a href="https://www.flaticon.com/free-icons/biography" title="biography icons">Biography icons created by manshagraphics - Flaticon</a>
       </div>
     </div>
