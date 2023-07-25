@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className="img-container w-full h-[70%] flex justify-center items-center bg-red-100 rounded-t-lg">
           <img
-            src={`src/assets/${project.images[0]}`}
+            src={project.images[0]}
             className={`${
               project.id === 3 ? "w-auto" : "w-full"
             } h-full rounded-t-lg`}

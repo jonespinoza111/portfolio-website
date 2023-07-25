@@ -9,6 +9,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import SlideMotion from "../components/SlideMotion";
+import aboutMe1 from '../assets/about-me-1.jpg';
+import aboutMe2 from '../assets/about-me-2.jpg';
+import aboutMe3 from '../assets/about-me-3.jpg';
 
 
 const skills = [
@@ -66,7 +69,7 @@ const About = () => {
       <SlideMotion direction={'left'}>
         <div className="w-full h-auto color-1 p-5 flex flex-col lg:flex-row justify-center md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
-            <img className="w-full h-full" src="../src/assets/about-me-1.jpg" />
+            <img className="w-full h-full" src={aboutMe1} />
           </div>
           <div className="p-5 color-1 max-h-[300px]">
             <div className="flex flex-col items-start justify-center w-[420px] h-full md:px-0 px-10">
@@ -88,7 +91,7 @@ const About = () => {
 
         <div className="w-full h-auto color-1 p-5 flex flex-col lg:flex-row-reverse justify-center md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
-            <img className="w-full h-full" src="../src/assets/about-me-2.jpg" />
+            <img className="w-full h-full" src={aboutMe2} />
           </div>
           <div className="p-5 flex flex-col items-end color-1 max-h-[300px]">
             <div className="fflex flex-col items-start justify-center w-[420px] h-full md:px-0 px-10">
@@ -111,7 +114,7 @@ const About = () => {
       <SlideMotion direction={'left'}>
         <div className="w-full h-auto color-1 p-5 flex flex-col lg:flex-row justify-center md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
-            <img className="w-full h-full" src="../src/assets/about-me-3.jpg" />
+            <img className="w-full h-full" src={aboutMe3} />
           </div>
           <div className="p-5 color-1 max-h-[300px]">
             <div className="flex flex-col items-start justify-center w-[420px] h-full md:px-0 px-10">

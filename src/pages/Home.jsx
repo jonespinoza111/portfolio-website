@@ -3,6 +3,7 @@ import CustomButton from "../components/CustomButton";
 import { useNavigate } from "react-router-dom";
 import SocialLinks from "../components/SocialLinks";
 import SlideMotion from "../components/SlideMotion";
+import homeImage from '../assets/home-image.jpg'
 
 
 const Home = () => {
@@ -28,7 +29,7 @@ const Home = () => {
             />
           </div>
           <div className="center-image">
-            <img src="src/assets/6192651.jpg" width={500} height={200} />
+            <img src={homeImage} width={500} height={200} />
           </div>
         </section>
       </SlideMotion>

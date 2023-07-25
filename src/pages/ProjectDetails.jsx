@@ -52,7 +52,7 @@ const ProjectDetails = () => {
                       className={`md:h-[100%] lg:max-h-full max-h-[300px] ${
                         details.id === 3 ? "w-auto" : "w-[100%]"
                       }`}
-                      src={`../src/assets/${image}`}
+                      src={image}
                     />
                   </div>
                 ))}
