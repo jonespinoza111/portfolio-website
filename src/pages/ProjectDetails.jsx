@@ -39,7 +39,7 @@ const ProjectDetails = () => {
       />
       <div className="w-full h-auto flex flex-row justify-center lg:pt-[50px] pt-[90px] ">
         <div className="project-details-card flex flex-col lg:flex-row color-1 bg-opacity-20 md:w-[90%] w-[80%] md:h-[100%] h-auto box-shadow-2 rounded-2xl">
-          <div className="flex justify-center items-center lg:w-[50%] md:w-[100%] lg:h-full md:h-[50%] h-auto bg-color-1 bg-gray-700 bg-opacity-60 lg:rounded-r-2xl rounded-t-2xl">
+          <div className="flex justify-center items-center lg:w-[55%] md:w-[100%] lg:h-full md:h-[50%] h-auto bg-color-1 bg-gray-700 bg-opacity-60 lg:rounded-r-2xl rounded-t-2xl">
             <div className="w-[100%] h-[100%] lg:rounded-r-2xl rounded-t-2xl">
               <Slide>
                 {details.images.map((image) => (
@@ -59,7 +59,7 @@ const ProjectDetails = () => {
               </Slide>
             </div>
           </div>
-          <div className="lg:w-[50%] w-full lg:h-[550px] md:h-auto h-auto bg-gray-700 bg-opacity-60 lg:max-h-[550px] text-white flex flex-col justify-evenly gap-5 px-10 py-10">
+          <div className="lg:w-[45%] w-full lg:h-[550px] md:h-auto h-auto bg-gray-700 bg-opacity-60 lg:max-h-[550px] text-white flex flex-col justify-evenly gap-5 px-10 py-10">
             <div className="lg:mt-0 mt-[40px]">
               <h2 className="font-bold text-4xl">{details.title}</h2>
             </div>
