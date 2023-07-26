@@ -8,7 +8,9 @@ const Navbar = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
   return (
     <div className="bg-white text-black flex sm:flex-row items-center justify-between w-full h-16 md:px-10 px-5">
-      <div className="logo font-semibold">JONATHAN-ESPINOZA</div>
+      <Link id="nav-link" to="/home">
+        <div className="logo font-semibold">JONATHAN-ESPINOZA</div>
+      </Link>
       <div className="links sm:flex sm:flex-row align-items space-x-10 hidden text-[18px]">
         <Link id="nav-link" to="/home">
           Home

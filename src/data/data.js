@@ -45,6 +45,8 @@ export const projectData = [
       "Send direct messages",
       "Edit Profile",
       "MERN stack",
+      "Username: User1",
+      "Password: Password"
     ],
     github: "https://github.com/jonespinoza111/react-chat",
     link: "https://chat-with-us.netlify.app/",
@@ -117,6 +119,8 @@ export const projectData = [
       "Create lists",
       "Search for books",
       "Write reviews",
+      "Username: User1",
+      "Password: Password"
     ],
     github: "https://github.com/jonespinoza111/bookbox",
     link: "https://dev.d3supdqhny5bev.amplifyapp.com",
