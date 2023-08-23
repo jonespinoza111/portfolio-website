@@ -16,7 +16,7 @@ const SocialLinks = () => {
                 </a>
             )}
             {num === "linkedin" && (
-              <a  key={index} href="#" className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`}>
+              <a  key={index} href="www.linkedin.com/in/jonathan-espinoza-21965a184" className={`social-button btn ${num} flex items-center justify-center h-[70px] w-[70px]`}>
                 <FontAwesomeIcon className="fa" icon={faLinkedinIn} />
               </a>
             )}
