@@ -50,8 +50,8 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen h-auto color-1 py-5 md:px-[200px] px-[20px] flex flex-col gap-10">
-      <section className="w-full h-auto color-1 p-10 flex flex-col justify-center flex-wrap">
+    <div className="w-[100%] max-w-[100%] min-h-screen h-auto color-1 flex flex-col gap-10 pt-[10em]">
+      <section id="about" className="w-full h-auto color-1 p-10 flex flex-col justify-center flex-wrap px-[100px]">
         <h3
           className="text-white font-semibold md:text-3xl text-2xl w-full flex 
             md:justify-start justify-center md:mb-0 mb-5"
@@ -67,7 +67,7 @@ const About = () => {
       {/*1*/}
 
       <SlideMotion direction={'left'}>
-        <div className="w-full h-auto color-1 p-5 flex flex-col lg:flex-row justify-center md:items-start items-center">
+        <div className="w-full h-auto color-1 p-5 md:pl-[100px] flex flex-col lg:flex-row md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
             <img className="w-full h-full" src={aboutMe1} />
           </div>
@@ -89,7 +89,7 @@ const About = () => {
       {/*2*/}
       <SlideMotion direction={'right'}>
 
-        <div className="w-full h-auto color-1 p-5 flex flex-col lg:flex-row-reverse justify-center md:items-start items-center">
+        <div className="w-full h-auto color-1 p-5 md:pr-[100px] flex flex-col lg:flex-row-reverse md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
             <img className="w-full h-full" src={aboutMe2} />
           </div>
@@ -112,7 +112,7 @@ const About = () => {
 
       {/*3*/}
       <SlideMotion direction={'left'}>
-        <div className="w-full h-auto color-1 p-5 flex flex-col lg:flex-row justify-center md:items-start items-center">
+        <div className="w-full h-auto color-1 p-5 md:pl-[100px] flex flex-col lg:flex-row md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
             <img className="w-full h-full" src={aboutMe3} />
           </div>

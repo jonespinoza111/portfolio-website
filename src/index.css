@@ -79,7 +79,6 @@
 
   .button-1 {
     position: relative;
-    margin: auto;
     padding: 12px 22px;
     transition: all 0.2s ease;
   }
@@ -224,10 +223,13 @@
   .btn {
     display: inline-block;
     background-color: #fff;
-    width: 90px;
-    height: 90px;
+    width: 50px;
+    height: 50px;
     line-height: 90px;
-    margin: 0 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -245,7 +247,7 @@
     transform: rotate(45deg);
   }
   .btn .fa {
-    font-size: 38px;
+    font-size: 25px;
     vertical-align: middle;
   }
 
@@ -334,4 +336,12 @@
     background-image: url('../src/assets/wave-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.react-slideshow-container .default-nav:last-of-type {
+  right: 5px;
+}
+
+.react-slideshow-container .default-nav:first-of-type {
+  left: 5px;
 }

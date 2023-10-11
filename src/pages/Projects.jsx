@@ -4,13 +4,14 @@ import "react-simple-tabs-component/dist/index.css";
 import { projectData } from "../data/data";
 import ProjectCard from "../components/ProjectCard";
 
-
 const TabContent = ({ label }) => {
   return (
     <div className="flex lg:flex-row flex-wrap items-center flex-col">
-      {projectData.filter(project => project.tags.includes(label)).map((project, index) => (
-        <ProjectCard key={index} project={project} />
-      ))}
+      {projectData
+        .filter((project) => project.tags.includes(label))
+        .map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
     </div>
   );
 };
@@ -34,14 +35,17 @@ const tabs = [
   },
   {
     label: "AWS",
-    Component: () => <TabContent label="AWS" />
-  }
+    Component: () => <TabContent label="AWS" />,
+  },
 ];
 
 const Projects = () => {
   return (
-    <div className="w-100 h-screen color-1">
-      <section className="color-1 h-auto min-h-full flex flex-col items-center py-5 md:px-[200px] px-[20px]">
+    <div className="w-[100%] h-auto color-1 py-[5em] flex justify-center">
+      <section
+        id="projects"
+        className="color-1 h-auto min-h-full flex flex-col items-center py-5 md:px-[100px] w-[80%] md:w-[100%]"
+      >
         <div className="w-full h-auto color-1 py-10">
           <h3 className="text-white font-semibold md:text-3xl text-2xl w-full mb-8">
             Projects
