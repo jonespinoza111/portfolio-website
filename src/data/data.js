@@ -29,9 +29,52 @@ import bookbox5 from "../assets/bookbox-5.png";
 import bookbox6 from "../assets/bookbox-6.png";
 import bookbox7 from "../assets/bookbox-7.png";
 
+import gadgetGalaxy1 from "../assets/gadget-galaxy-1.png";
+import gadgetGalaxy2 from "../assets/gadget-galaxy-2.png";
+import gadgetGalaxy3 from "../assets/gadget-galaxy-3.png";
+import gadgetGalaxy4 from "../assets/gadget-galaxy-4.png";
+import gadgetGalaxy5 from "../assets/gadget-galaxy-5.png";
+import gadgetGalaxy6 from "../assets/gadget-galaxy-6.png";
+import gadgetGalaxy7 from "../assets/gadget-galaxy-7.png";
+import gadgetGalaxy8 from "../assets/gadget-galaxy-8.png";
+import gadgetGalaxy9 from "../assets/gadget-galaxy-9.png";
+import gadgetGalaxy10 from "../assets/gadget-galaxy-10.png";
+
 export const projectData = [
   {
     id: 1,
+    title: "Gadget Galaxy",
+    description:
+      "A electronics ecommerce website built with PHP Laravel. Allows users to buy various electronic products.",
+    features: [
+      "PHP",
+      "Laravel",
+      "React",
+      "Ecommerce",
+      "Cart System",
+      "Checkout Page",
+      "Admin Dashboard",
+      "Authentication",
+      "Livewire"
+    ],
+    github: "https://github.com/jonespinoza111/gadget-galaxy",
+    link: "https://gadget-galaxy.site",
+    tags: ["All", "PHP", "React", "Full-Stack"],
+    images: [
+      gadgetGalaxy1,
+      gadgetGalaxy2,
+      gadgetGalaxy3,
+      gadgetGalaxy4,
+      gadgetGalaxy5,
+      gadgetGalaxy6,
+      gadgetGalaxy7,
+      gadgetGalaxy8,
+      gadgetGalaxy9,
+      gadgetGalaxy10
+    ],
+  },
+  {
+    id: 2,
     title: "ChatWithUs",
     description:
       "A React app that uses WebSockets to allow users to chat with other users and create rooms.",
@@ -52,25 +95,6 @@ export const projectData = [
     link: "https://chat-with-us.netlify.app/",
     tags: ["All", "React", "Full-Stack"],
     images: [ChatWithUs1, ChatWithUs2, ChatWithUs3, ChatWithUs4],
-  },
-  {
-    id: 2,
-    title: "Hot Star Hunan Grill",
-    description:
-      "A react app for a Chinese restaurant with a full menu and online ordering.",
-    features: [
-      "Landing Page",
-      "Food Menu",
-      "Online Ordering",
-      "Stripe Payments",
-      "Cart System",
-      "Tailwind",
-      "MERN Stack",
-    ],
-    github: "https://github.com/jonespinoza111/react-restaurant",
-    link: "https://hot-star-hunan-grill.netlify.app/",
-    tags: ["All", "React", "Full-Stack"],
-    images: [hotStar1, hotStar2, hotStar3, hotStar4, hotStar5, hotStar6],
   },
   {
     id: 3,
@@ -107,6 +131,25 @@ export const projectData = [
   },
   {
     id: 4,
+    title: "Hot Star Hunan Grill",
+    description:
+      "A react app for a Chinese restaurant with a full menu and online ordering.",
+    features: [
+      "Landing Page",
+      "Food Menu",
+      "Online Ordering",
+      "Stripe Payments",
+      "Cart System",
+      "Tailwind",
+      "MERN Stack",
+    ],
+    github: "https://github.com/jonespinoza111/react-restaurant",
+    link: "https://hot-star-hunan-grill.netlify.app/",
+    tags: ["All", "React", "Full-Stack"],
+    images: [hotStar1, hotStar2, hotStar3, hotStar4, hotStar5, hotStar6],
+  },
+  {
+    id: 5,
     title: "BookBox",
     description:
       "A React app that uses the Google Books API to display info. on books and create lists.",

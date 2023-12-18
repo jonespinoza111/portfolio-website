@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
+import Home from './pages/Home';
 import { Navigate, Route, Routes } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Projects from './pages/Projects';
+import ProjectDetails from './pages/ProjectDetails';
+import About from './pages/About';
 import Sidebar from './components/Sidebar';
 import Portfolio from './pages/Portfolio';
 
@@ -29,6 +34,7 @@ function App() {
   
   return (
     <div className="App bg-black min-h-screen flex flex-row">
+      {/* <Navbar /> */}
       <Sidebar open={open} closeSidebar={closeSidebar} />
       <Routes>
         <Route exact path="/" element={<Portfolio open={open} openSidebar={openSidebar} />} />

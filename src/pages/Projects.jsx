@@ -22,6 +22,10 @@ const tabs = [
     Component: () => <TabContent label="All" />, // Tab Body - JSX.Element
   },
   {
+    label: "PHP",
+    Component: () => <TabContent label="PHP" />,
+  },
+  {
     label: "React",
     Component: () => <TabContent label="React" />,
   },
