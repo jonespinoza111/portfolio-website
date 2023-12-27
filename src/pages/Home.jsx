@@ -24,7 +24,7 @@ const Home = () => {
             <div className="button flex flex-row justify-start">
               <a
                 href={Resume}
-                download="Jonathan-Espinoza-Resume-Web-Developer.pdf"
+                download="Jonathan-Espinoza-Web-Developer-Resume.pdf"
                 className="button-1 m-0 cursor-pointer hover:text-black"
               >
                 <span className="button-span">Download Resume</span>
