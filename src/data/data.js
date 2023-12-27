@@ -55,7 +55,8 @@ export const projectData = [
       "Checkout Page",
       "Admin Dashboard",
       "Authentication",
-      "Livewire"
+      "Livewire",
+      "Paypal Checkout"
     ],
     github: "https://github.com/jonespinoza111/gadget-galaxy",
     link: "https://gadget-galaxy.site",
