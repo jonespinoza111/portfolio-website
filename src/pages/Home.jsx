@@ -1,7 +1,7 @@
 import React from "react";
 import SlideMotion from "../components/SlideMotion";
 import homeImage from "../assets/home-image.jpg";
-import Resume from "../assets/Jonathan-Espinoza-Resume-Web-Developer.pdf";
+import Resume from "../assets/Jonathan-Espinoza-Web-Developer-Resume.pdf";
 
 const Home = () => {
   return (

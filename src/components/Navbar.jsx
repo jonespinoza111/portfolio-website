@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Resume from "../assets/Jonathan-Espinoza-Resume-Web-Developer.pdf";
+import Resume from "../assets/Jonathan-Espinoza-Web-Developer-Resume.pdf";
 
 const Navbar = () => {
   const [toggleDrawer, setToggleDrawer] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="button hidden sm:flex ">
         <a
           href={Resume}
-          download="Jonathan-Espinoza-Resume-Web-Developer.pdf"
+          download="Jonathan-Espinoza-Web-Developer-Resume.pdf"
           className="button-1 w-auto cursor-pointer"
         >
           <span className="button-span">Download Resume</span>
@@ -56,7 +56,7 @@ const Navbar = () => {
         <div className="w-auto">
           <a
             href={Resume}
-            download="Jonathan-Espinoza-Resume-Web-Developer.pdf"
+            download="Jonathan-Espinoza-Web-Developer-Resume.pdf"
             className="hover:bg-[#54b3d6] px-4 py-2 capitalize"
             onClick={() => setToggleDrawer(false)}
           >
