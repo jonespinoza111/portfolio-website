@@ -37,15 +37,23 @@ const ProjectModal = ({ children, projectDetails }) => {
                 <div className='flex flex-col w-full flex-1 items-center gap-y-6'>
                     <div className='w-[80%]'>
                         <Slide>
+                            {projectDetails.videos && (
+                                <div className={`w-full h-auto md:h-[20em] bg-cover bg-black flex justify-center items-center`}>
+                                    <video width="200" height="20em" controls autoPlay>
+                                        <source src={projectDetails.videos[0]} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            )}
                             {projectDetails.images.map((image) => (
                             <div
                                 className={`w-full h-auto md:h-[20em] bg-cover bg-black ${
-                                projectDetails.id === 3 && "flex justify-center items-center"
+                                (projectDetails.id === 3 || projectDetails.id === 6) && "flex justify-center items-center"
                                 }`}
                             >
                                 <img
                                 className={`h-full md:h-[100%] max-h-[300px] ${
-                                    projectDetails.id === 3 ? "w-auto" : "w-[100%]"
+                                    (projectDetails.id === 3 || projectDetails.id === 6) ? "w-auto" : "w-[100%]"
                                 }`}
                                 src={image}
                                 />

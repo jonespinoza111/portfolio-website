@@ -7,11 +7,11 @@ const ProjectCard = ({ project }) => {
     <SlideMotion direction="up">
       <ProjectModal projectDetails={project}>
         <div className="card bg-white text-black container-box-shadow w-[425px] h-[350px] flex flex-col my-5 mx-4 cursor-pointer rounded-lg hover:-translate-y-1 hover:scale-105 transition-all duration-200">
-          <div className="img-container w-full h-[65%] sm:h-[70%] flex justify-center items-center bg-black rounded-t-lg">
+          <div className="relative img-container w-full h-[65%] sm:h-[70%] flex justify-center items-center bg-black rounded-t-lg"> 
             <img
               src={project.images[0]}
               className={`${
-                project.id === 3 ? "w-auto" : "w-full"
+                (project.id === 3 || project.id === 6) ? "w-auto" : "w-full"
               } h-full rounded-t-lg`}
             />
           </div>

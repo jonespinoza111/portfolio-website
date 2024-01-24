@@ -40,6 +40,18 @@ import gadgetGalaxy8 from "../assets/gadget-galaxy-8.png";
 import gadgetGalaxy9 from "../assets/gadget-galaxy-9.png";
 import gadgetGalaxy10 from "../assets/gadget-galaxy-10.png";
 
+import smoothieShop1 from "../assets/react-native-smoothie-shop-1.png";
+import smoothieShop2 from "../assets/react-native-smoothie-shop-2.png";
+import smoothieShop3 from "../assets/react-native-smoothie-shop-3.png";
+import smoothieShop4 from "../assets/react-native-smoothie-shop-4.png";
+import smoothieShop5 from "../assets/react-native-smoothie-shop-5.png";
+import smoothieShop6 from "../assets/react-native-smoothie-shop-6.png";
+import smoothieShop7 from "../assets/react-native-smoothie-shop-7.png";
+import smoothieShop8 from "../assets/react-native-smoothie-shop-8.png";
+import smoothieShop9 from "../assets/react-native-smoothie-shop-9.png";
+import smoothieShop10 from "../assets/react-native-smoothie-shop-10.png";
+import smoothieShopGif from "../assets/react-native-smoothie-shop-gif.mp4"
+
 export const projectData = [
   {
     id: 1,
@@ -73,6 +85,7 @@ export const projectData = [
       gadgetGalaxy9,
       gadgetGalaxy10
     ],
+    videos: null,
   },
   {
     id: 2,
@@ -96,6 +109,7 @@ export const projectData = [
     link: "https://chat-with-us.netlify.app/",
     tags: ["All", "React", "Full-Stack"],
     images: [ChatWithUs1, ChatWithUs2, ChatWithUs3, ChatWithUs4],
+    videos: null,
   },
   {
     id: 3,
@@ -129,6 +143,7 @@ export const projectData = [
       rnRecipes9,
       rnRecipes10,
     ],
+    videos: null,
   },
   {
     id: 4,
@@ -148,6 +163,7 @@ export const projectData = [
     link: "https://hot-star-hunan-grill.netlify.app/",
     tags: ["All", "React", "Full-Stack"],
     images: [hotStar1, hotStar2, hotStar3, hotStar4, hotStar5, hotStar6],
+    videos: null,
   },
   {
     id: 5,
@@ -178,5 +194,38 @@ export const projectData = [
       bookbox6,
       bookbox7,
     ],
+    videos: null,
+  },
+  {
+    id: 6,
+    title: "Smoothie Shop",
+    description:
+      "A React Native smoothie shop apps that lets you buy different smoothies.",
+    features: [
+      "Modern Design",
+      "Zustand",
+      "Shopping Cart",
+      "Checkout",
+      "Save Favorites",
+      "View Order History"
+    ],
+    github: "https://github.com/jonespinoza111/",
+    link: "",
+    tags: ["All", "React", "React-Native"],
+    images: [
+      smoothieShop1,
+      smoothieShop2,
+      smoothieShop3,
+      smoothieShop4,
+      smoothieShop5,
+      smoothieShop6,
+      smoothieShop7,
+      smoothieShop8,
+      smoothieShop9,
+      smoothieShop10,
+    ],
+    videos: [
+      smoothieShopGif
+    ]
   },
 ];
