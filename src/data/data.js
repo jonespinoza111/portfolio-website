@@ -200,8 +200,9 @@ export const projectData = [
     id: 6,
     title: "Smoothie Shop",
     description:
-      "A React Native smoothie shop apps that lets you buy different smoothies.",
+      "A React Native smoothie shop app that lets you buy different smoothies.",
     features: [
+      "React Native",
       "Modern Design",
       "Zustand",
       "Shopping Cart",
