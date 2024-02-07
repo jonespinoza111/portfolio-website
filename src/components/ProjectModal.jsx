@@ -67,7 +67,7 @@ const ProjectModal = ({ children, projectDetails }) => {
                         <h3 className='font-semibold text-[1.2em]'>Project Info:</h3>
                         <p className="mb-4">{projectDetails.description}</p>
                         <h3 className='font-semibold text-[1.2em]'>Project Details:</h3>
-                        <div className='mb-3 flex flex-col h-[13em] flex-wrap'>
+                        <div className='mb-3 flex flex-col h-auto sm:h-[13em] flex-wrap'>
                             {projectDetails.features.map((feature, index) => (
                             <li key={index} className="font-light list-none mb-2">
                                 - {feature}
@@ -78,7 +78,7 @@ const ProjectModal = ({ children, projectDetails }) => {
                             <CustomButton
                                 type="2"
                                 text="github repo"
-                                size="medium"
+                                size={window.innerWidth < 450 ? "small" : "medium"}
                                 icon={faCode}
                                 btnColor="green"
                                 link={projectDetails.github}
@@ -87,7 +87,7 @@ const ProjectModal = ({ children, projectDetails }) => {
                                 <CustomButton
                                 type="2"
                                 text="visit site"
-                                size="medium"
+                                size={window.innerWidth < 450 ? "small" : "medium"}
                                 icon={faDesktop}
                                 btnColor="blue"
                                 link={projectDetails.link}
