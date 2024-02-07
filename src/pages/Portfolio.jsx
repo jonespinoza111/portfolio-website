@@ -23,7 +23,7 @@ const Portfolio = ({ openSidebar }) => {
       <About />
       <Projects />
       <Contact />
-      <div className="flex text-black justify-center items-center font-extralight h-[10em] w-auto sm:w-[100%] bg-white">
+      <div className="flex text-black justify-center items-center font-extralight h-[10em] px-10 sm:p-0 sm:w-[100%] bg-white">
         <a
           href="https://www.flaticon.com/free-icons/biography"
           title="biography icons"
