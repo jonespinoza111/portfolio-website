@@ -30,7 +30,7 @@ function App() {
   }, []);
   
   return (
-    <div className="App bg-blue-200 min-h-screen flex flex-row">
+    <div className="App min-h-screen flex flex-row">
       {/* <Navbar /> */}
       <Sidebar open={open} closeSidebar={closeSidebar} />
       <Routes>
