@@ -21,6 +21,9 @@ const Navbar = () => {
         <Link id="nav-link" to="/projects">
           Projects
         </Link>
+        <Link id="nav-link" to="/blog">
+          Blog
+        </Link>
       </div>
       <div className="button hidden sm:flex ">
         <a
