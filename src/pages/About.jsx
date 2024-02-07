@@ -51,7 +51,7 @@ const skills = [
 const About = () => {
   return (
     <div className="w-[100%] max-w-[100%] min-h-screen h-auto color-1 flex flex-col gap-10 pt-[10em] items-center">
-      <section id="about" className="w-full h-auto color-1 p-10 flex flex-col justify-center flex-wrap px-[100px]">
+      <section id="about" className="w-full h-auto color-1 p-10 flex flex-col justify-center flex-wrap px-0 sm:px-[100px]">
         <h3
           className="text-white font-semibold md:text-3xl text-2xl w-full flex 
             md:justify-start justify-center md:mb-0 mb-5"

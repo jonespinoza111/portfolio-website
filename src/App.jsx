@@ -1,16 +1,10 @@
 import { useEffect, useState } from 'react';
-import Home from './pages/Home';
 import { Navigate, Route, Routes } from "react-router-dom";
-import Navbar from './components/Navbar';
-import Projects from './pages/Projects';
-import ProjectDetails from './pages/ProjectDetails';
-import About from './pages/About';
 import Sidebar from './components/Sidebar';
 import Portfolio from './pages/Portfolio';
-import Blog from './pages/Blog';
 
 function App() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(window.innerWidth <= 768 ? false : true);
     const closeSidebar = () => {
         setOpen(false);
     }
@@ -42,7 +36,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Portfolio open={open} openSidebar={openSidebar} />} />
         <Route exact path="/home" element={<Portfolio open={open} openSidebar={openSidebar} />} />
-        <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
           </div>
           <div className="w-full h-[35%] sm:h-[30%]">
             <h3 className="pl-5 pt-2 font-semibold text-xl">{project.title}</h3>
-            <p className="pl-5 pr-2 pt-2 font-medium text-[15px]">
+            <p className="pl-5 pr-2 pt-2 font-light sm:font-medium text-[15px]">
               {project.description}
             </p>
           </div>

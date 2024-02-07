@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react'
 import CustomButton from './CustomButton';
 import { faCode, faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
 
 const ProjectModal = ({ children, projectDetails }) => {
     const modalRef = useRef(null);
@@ -38,7 +40,7 @@ const ProjectModal = ({ children, projectDetails }) => {
                     <div className='w-[80%]'>
                         <Slide>
                             {projectDetails.videos && (
-                                <div className={`w-full h-auto md:h-[20em] bg-cover bg-black flex justify-center items-center`}>
+                                <div className={`w-full h-[20em] bg-cover bg-black flex justify-center items-center`}>
                                     <video width="200" height="20em" controls autoPlay>
                                         <source src={projectDetails.videos[0]} type="video/mp4" />
                                         Your browser does not support the video tag.
@@ -47,8 +49,8 @@ const ProjectModal = ({ children, projectDetails }) => {
                             )}
                             {projectDetails.images.map((image) => (
                             <div
-                                className={`w-full h-auto md:h-[20em] bg-cover bg-black ${
-                                (projectDetails.id === 3 || projectDetails.id === 6) && "flex justify-center items-center"
+                                className={`w-full h- auto md:h-[20em] bg-cover bg-black ${
+                                (projectDetails.id === 3 || projectDetails.id === 6) && "flex justify-center items-center h-[20em]"
                                 }`}
                             >
                                 <img
