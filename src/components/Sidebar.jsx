@@ -2,13 +2,14 @@ import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = ({ open, closeSidebar }) => {
   return (
     <nav
-      className={`w-[260px] ${
+      className={`w-[220px] lg:w-[260px] ${
         open ? "visible" : "translate-x-[-100%]"
-      } z-10 top-0 left-0 bg-black h-screen flex flex-col items-center justify-between pt-[3em] pb-[2em] fixed inset-y-0 w-64 text-white transition-transform transform duration-300 ease-in-out`}
+      } z-10 top-0 left-0 bg-black h-screen flex flex-col items-center justify-between pt-[3em] pb-[2em] fixed inset-y-0 text-white transition-transform transform duration-300 ease-in-out`}
     >
       <div className="visible md:hidden top-0 left-0 absolute">
         <button
@@ -26,30 +27,30 @@ const Sidebar = ({ open, closeSidebar }) => {
         <h3 className="text-white text-[1.4em]">Jonathan Espinoza</h3>
       </div>
       <div className="links flex flex-col gap-y-5 text-[1.2em] text-white text-center">
-        <a
+        <NavLink
           className="bg-black hover:text-blue-300 text-white font-bold py-2 px-4 rounded transition duration-300"
-          href="#home"
+          to="/#home"
         >
           Home
-        </a>
-        <a
+        </NavLink>
+        <NavLink
           className="bg-black hover:text-blue-300 text-white font-bold py-2 px-4 rounded transition duration-300"
-          href="#about"
+          to="/#about"
         >
           About Me
-        </a>
-        <a
+        </NavLink>
+        <NavLink
           className="bg-black hover:text-blue-300 text-white font-bold py-2 px-4 rounded transition duration-300"
-          href="#projects"
+          to="/#projects"
         >
           Projects
-        </a>
-        <a
+        </NavLink>
+        <NavLink
           className="bg-black hover:text-blue-300 text-white font-bold py-2 px-4 rounded transition duration-300"
-          href="#contact"
+          to="/#contact"
         >
           Contact
-        </a>
+        </NavLink>
       </div>
       <div className="social-media-buttons flex flex-row items-center justify-center gap-x-3">
         {["github", "linkedin", "gmail"].map((num, index) => (

@@ -36,7 +36,7 @@ const Contact = () => {
           className="flex flex-col gap-y-4 mx-[100px]"
         >
           <label className="text-[1.5em]">Get In Touch</label>
-          <div className="w-[100%] gap-4 flex flex-row">
+          <div className="w-[100%] gap-4 flex flex-col sm:flex-row">
             <input
               type="text"
               name="from_name"

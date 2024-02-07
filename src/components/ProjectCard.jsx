@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
   return (
     <SlideMotion direction="up">
       <ProjectModal projectDetails={project}>
-        <div className="card bg-white text-black container-box-shadow w-[425px] h-[350px] flex flex-col my-5 mx-4 cursor-pointer rounded-lg hover:-translate-y-1 hover:scale-105 transition-all duration-200">
+        <div className="card bg-white text-black container-box-shadow w-auto sm:w-[425px] h-[350px] flex flex-col my-5 mx-4 cursor-pointer rounded-lg hover:-translate-y-1 hover:scale-105 transition-all duration-200">
           <div className="relative img-container w-full h-[65%] sm:h-[70%] flex justify-center items-center bg-black rounded-t-lg"> 
             <img
               src={project.images[0]}

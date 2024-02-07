@@ -5,10 +5,11 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import ScrollToHashElement from "../components/ScrollToHashElement";
 
 const Portfolio = ({ openSidebar }) => {
   return (
-    <div className="md:ml-[260px] h-auto flex flex-col flex-1 max-w-[1500px]">
+    <div className={`md:ml-[220px] lg:ml-[260px] h-auto flex flex-col w-full`}>
       <div>
         <button
           onClick={openSidebar}
@@ -17,6 +18,7 @@ const Portfolio = ({ openSidebar }) => {
           <FontAwesomeIcon icon={faBars} />
         </button>
       </div>
+      <ScrollToHashElement />
       <Home />
       <About />
       <Projects />

@@ -50,7 +50,7 @@ const skills = [
 
 const About = () => {
   return (
-    <div className="w-[100%] max-w-[100%] min-h-screen h-auto color-1 flex flex-col gap-10 pt-[10em]">
+    <div className="w-[100%] max-w-[100%] min-h-screen h-auto color-1 flex flex-col gap-10 pt-[10em] items-center">
       <section id="about" className="w-full h-auto color-1 p-10 flex flex-col justify-center flex-wrap px-[100px]">
         <h3
           className="text-white font-semibold md:text-3xl text-2xl w-full flex 
@@ -67,12 +67,12 @@ const About = () => {
       {/*1*/}
 
       <SlideMotion direction={'left'}>
-        <div className="w-full h-auto color-1 p-5 md:pl-[100px] flex flex-col lg:flex-row md:items-start items-center">
+        <div className="w-full h-auto color-1 p-5 xl:pl-[55px] flex flex-col xl:flex-row lg:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
             <img className="w-full h-full" src={aboutMe1} />
           </div>
           <div className="p-5 color-1 max-h-[300px]">
-            <div className="flex flex-col items-start justify-center w-[420px] h-full md:px-0 px-10">
+            <div className="flex flex-col items-start justify-center w-auto sm:w-[420px] h-full md:px-0 px-10">
               <h3 className="text-white font-semibold md:text-2xl text-lg w-full">
                   Passion for Learning
               </h3>
@@ -89,12 +89,12 @@ const About = () => {
       {/*2*/}
       <SlideMotion direction={'right'}>
 
-        <div className="w-full h-auto color-1 p-5 md:pr-[100px] flex flex-col lg:flex-row-reverse md:items-start items-center">
+        <div className="w-full h-auto color-1 p-5 xl:pr-[55px] flex flex-col xl:flex-row-reverse lg:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
             <img className="w-full h-full" src={aboutMe2} />
           </div>
           <div className="p-5 flex flex-col items-end color-1 max-h-[300px]">
-            <div className="fflex flex-col items-start justify-center w-[420px] h-full md:px-0 px-10">
+            <div className="flex flex-col items-start justify-center w-auto sm:w-[420px] h-full md:px-0 px-10">
               <h3 className="text-white font-semibold md:text-2xl text-lg w-full">
                 I use many tools to build beautiful applications
               </h3>
@@ -112,12 +112,12 @@ const About = () => {
 
       {/*3*/}
       <SlideMotion direction={'left'}>
-        <div className="w-full h-auto color-1 p-5 md:pl-[100px] flex flex-col lg:flex-row md:items-start items-center">
+        <div className="w-full h-auto color-1 p-5 xl:pl-[55px] flex flex-col xl:flex-row md:items-start items-center">
           <div className="md:w-[470px] w-[300px] md:h-[300px] h-[200px] p-2 bg-white">
             <img className="w-full h-full" src={aboutMe3} />
           </div>
           <div className="p-5 color-1 max-h-[300px]">
-            <div className="flex flex-col items-start justify-center w-[420px] h-full md:px-0 px-10">
+            <div className="flex flex-col items-start justify-center w-auto sm:w-[420px] h-full md:px-0 px-10">
               <h3 className="text-white font-semibold md:text-2xl text-lg w-full">
                 Strong Problem-Solving Skills
               </h3>
