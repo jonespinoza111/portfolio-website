@@ -50,11 +50,33 @@ import smoothieShop7 from "../assets/react-native-smoothie-shop-7.png";
 import smoothieShop8 from "../assets/react-native-smoothie-shop-8.png";
 import smoothieShop9 from "../assets/react-native-smoothie-shop-9.png";
 import smoothieShop10 from "../assets/react-native-smoothie-shop-10.png";
-import smoothieShopGif from "../assets/react-native-smoothie-shop-gif.mp4"
+import smoothieShopGif from "../assets/react-native-smoothie-shop-gif.mp4";
+
+import HonestPets1 from "../assets/honest-pets-1.png";
 
 export const projectData = [
   {
     id: 1,
+    title: "Honest Pets",
+    description:
+      "A landing page for a Pet Care company called Honest Pets. Built with react and tailwind.",
+    features: [
+      "React",
+      "Landing Page",
+      "Responsive",
+      "Tailwind",
+      "Pet Care"
+    ],
+    github: "https://github.com/jonespinoza111/honest-pets-landing-page",
+    link: "https://honest-pets.netlify.app",
+    tags: ["All", "React"],
+    images: [
+      HonestPets1,
+    ],
+    videos: null,
+  },
+  {
+    id: 2,
     title: "Gadget Galaxy",
     description:
       "A electronics ecommerce website built with PHP Laravel. Allows users to buy various electronic products.",
@@ -88,7 +110,7 @@ export const projectData = [
     videos: null,
   },
   {
-    id: 2,
+    id: 3,
     title: "ChatWithUs",
     description:
       "A React app that uses WebSockets to allow users to chat with other users and create rooms.",
@@ -112,7 +134,7 @@ export const projectData = [
     videos: null,
   },
   {
-    id: 3,
+    id: 4,
     title: "React Recipes",
     description:
       "A React Native app that uses the Spoonacular API to display instructions for cooking recipes.",
@@ -146,7 +168,7 @@ export const projectData = [
     videos: null,
   },
   {
-    id: 4,
+    id: 5,
     title: "Hot Star Hunan Grill",
     description:
       "A react app for a Chinese restaurant with a full menu and online ordering.",
@@ -166,7 +188,7 @@ export const projectData = [
     videos: null,
   },
   {
-    id: 5,
+    id: 6,
     title: "BookBox",
     description:
       "A React app that uses the Google Books API to display info. on books and create lists.",
@@ -197,7 +219,7 @@ export const projectData = [
     videos: null,
   },
   {
-    id: 6,
+    id: 7,
     title: "Smoothie Shop",
     description:
       "A React Native smoothie shop app that lets you buy different smoothies.",
