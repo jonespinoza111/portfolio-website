@@ -52,7 +52,13 @@ import smoothieShop9 from "../assets/react-native-smoothie-shop-9.png";
 import smoothieShop10 from "../assets/react-native-smoothie-shop-10.png";
 import smoothieShopGif from "../assets/react-native-smoothie-shop-gif.mp4";
 
+import HonestPetsLogo from "../assets/pet-care-logo.png";
 import HonestPets1 from "../assets/honest-pets-1.png";
+import HonestPets2 from "../assets/honest-pets-2.png";
+import HonestPets3 from "../assets/honest-pets-3.png";
+import HonestPets4 from "../assets/honest-pets-4.png";
+import HonestPets5 from "../assets/honest-pets-5.png";
+import HonestPets6 from "../assets/honest-pets-6.png";
 
 export const projectData = [
   {
@@ -71,7 +77,13 @@ export const projectData = [
     link: "https://honest-pets.netlify.app",
     tags: ["All", "React"],
     images: [
+      HonestPetsLogo,
       HonestPets1,
+      HonestPets2,
+      HonestPets3,
+      HonestPets4,
+      HonestPets5,
+      HonestPets6,
     ],
     videos: null,
   },

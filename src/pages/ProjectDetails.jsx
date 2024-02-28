@@ -45,12 +45,12 @@ const ProjectDetails = () => {
                 {details.images.map((image) => (
                   <div
                     className={`lg:h-[550px] w-[100%] bg-cover lg:max-h-full max-h-[300px] bg-black lg:rounded-r-2xl rounded-t-2xl ${
-                      details.id === 3 && "flex justify-center items-center"
+                      details.id === 4 && "flex justify-center items-center"
                     }`}
                   >
                     <img
                       className={`md:h-[100%] lg:max-h-full max-h-[300px] ${
-                        details.id === 3 ? "w-auto" : "w-[100%]"
+                        details.id === 4 ? "w-auto" : "w-[100%]"
                       }`}
                       src={image}
                     />

@@ -49,13 +49,13 @@ const ProjectModal = ({ children, projectDetails }) => {
                             )}
                             {projectDetails.images.map((image) => (
                             <div
-                                className={`w-full h- auto md:h-[20em] bg-cover bg-black ${
-                                (projectDetails.id === 3 || projectDetails.id === 6) && "flex justify-center items-center h-[20em]"
+                                className={`w-full h-auto md:h-[20em] bg-cover bg-black ${
+                                (projectDetails.id === 4 || projectDetails.id === 7) && "flex justify-center items-center h-[20em]"
                                 }`}
                             >
                                 <img
-                                className={`h-full md:h-[100%] max-h-[300px] ${
-                                    (projectDetails.id === 3 || projectDetails.id === 6) ? "w-auto" : "w-[100%]"
+                                className={`h-full max-h-[320px] object-contain ${
+                                    (projectDetails.id === 4 || projectDetails.id === 7) ? "w-auto" : "w-[100%]"
                                 }`}
                                 src={image}
                                 />

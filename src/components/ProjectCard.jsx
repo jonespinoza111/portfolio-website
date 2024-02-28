@@ -11,8 +11,8 @@ const ProjectCard = ({ project }) => {
             <img
               src={project.images[0]}
               className={`${
-                (project.id === 3 || project.id === 6) ? "w-auto" : "w-full"
-              } h-full rounded-t-lg`}
+                (project.id === 4 || project.id === 7) ? "w-auto" : "w-full"
+              } h-full rounded-t-lg object-contain`}
             />
           </div>
           <div className="w-full h-[35%] sm:h-[30%]">
