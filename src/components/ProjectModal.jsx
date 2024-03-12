@@ -63,18 +63,7 @@ const ProjectModal = ({ children, projectDetails }) => {
                             ))}
                         </Slide>
                     </div>
-                    <div className='px-4 w-[80%]'>
-                        <h3 className='font-semibold text-[1.2em]'>Project Info:</h3>
-                        <p className="mb-4">{projectDetails.description}</p>
-                        <h3 className='font-semibold text-[1.2em]'>Project Details:</h3>
-                        <div className='mb-3 flex flex-col h-auto sm:h-[13em] flex-wrap'>
-                            {projectDetails.features.map((feature, index) => (
-                            <li key={index} className="font-light list-none mb-2">
-                                - {feature}
-                            </li>
-                            ))}
-                        </div>
-                        <div className="buttons-container flex xl:flex-row flex-col mb-4 gap-6 md:pb-0 pb-10 md:pt-0 pt-10">
+                    <div className="buttons-container flex xl:flex-row flex-col mb-4 gap-6 md:pb-0 pb-10 md:pt-0 pt-10">
                             <CustomButton
                                 type="2"
                                 text="github repo"
@@ -94,6 +83,37 @@ const ProjectModal = ({ children, projectDetails }) => {
                                 />
                             )}
                         </div>
+                    <div className='px-4 w-[80%]'>
+                        <h3 className='font-semibold text-[1.2em]'>Project Info:</h3>
+                        <p className="mb-4">{projectDetails.description}</p>
+                        <h3 className='font-semibold text-[1.2em]'>Project Details:</h3>
+                        <div className='mb-3 flex flex-col h-auto sm:h-[13em] flex-wrap'>
+                            {projectDetails.features.map((feature, index) => (
+                            <li key={index} className="font-light list-none mb-2">
+                                - {feature}
+                            </li>
+                            ))}
+                        </div>
+                        {/* <div className="buttons-container flex xl:flex-row flex-col mb-4 gap-6 md:pb-0 pb-10 md:pt-0 pt-10">
+                            <CustomButton
+                                type="2"
+                                text="github repo"
+                                size={window.innerWidth < 450 ? "small" : "medium"}
+                                icon={faCode}
+                                btnColor="green"
+                                link={projectDetails.github}
+                            />
+                            {projectDetails.link !== "" && (
+                                <CustomButton
+                                type="2"
+                                text="visit site"
+                                size={window.innerWidth < 450 ? "small" : "medium"}
+                                icon={faDesktop}
+                                btnColor="blue"
+                                link={projectDetails.link}
+                                />
+                            )}
+                        </div> */}
                         <button onClick={(e) => {
                             e.stopPropagation();
                             closeModal();

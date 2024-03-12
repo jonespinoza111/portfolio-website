@@ -60,7 +60,43 @@ import HonestPets4 from "../assets/honest-pets-4.png";
 import HonestPets5 from "../assets/honest-pets-5.png";
 import HonestPets6 from "../assets/honest-pets-6.png";
 
+import Enigma1 from "../assets/enigma-1.png";
+import Enigma2 from "../assets/enigma-2.png";
+import Enigma3 from "../assets/enigma-3.png";
+import Enigma4 from "../assets/enigma-4.png";
+import Enigma5 from "../assets/enigma-5.png";
+import Enigma6 from "../assets/enigma-6.png";
+import Enigma7 from "../assets/enigma-7.png";
+import Enigma8 from "../assets/enigma-8.png";
+
 export const projectData = [
+  {
+    id: 8,
+    title: "Enigma Clothing Shop",
+    description:
+      "A clothing store website called Enigma that was built with Angular and Tailwind.",
+    features: [
+      "Angular 17",
+      "Tailwind",
+      "Modern Design",
+      "Shopping Cart",
+      "Checkout",
+    ],
+    github: "https://github.com/jonespinoza111/Enigma-Clothing-Store/tree/master",
+    link: "https://enigmaclothing.netlify.app",
+    tags: ["All", "Angular"],
+    images: [
+      Enigma7,
+      Enigma1,
+      Enigma2,
+      Enigma3,
+      Enigma4,
+      Enigma5,
+      Enigma6,
+      Enigma8,
+    ],
+    videos: null
+  },
   {
     id: 1,
     title: "Honest Pets",

@@ -30,6 +30,10 @@ const tabs = [
     Component: () => <TabContent label="React" />,
   },
   {
+    label: "Angular",
+    Component: () => <TabContent label="Angular" />,
+  },
+  {
     label: "Full-Stack",
     Component: () => <TabContent label="Full-Stack" />,
   },
