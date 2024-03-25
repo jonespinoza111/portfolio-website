@@ -1,11 +1,18 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import ReactGA from 'react-ga4';
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    ReactGA.event({
+      category: 'form',
+      action: 'submit form',
+      label: 'contact form submit',
+    })
 
     const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;

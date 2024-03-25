@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Sidebar from './components/Sidebar';
 import Portfolio from './pages/Portfolio';
 
 function App() {
   const [open, setOpen] = useState(window.innerWidth <= 768 ? false : true);
-    const closeSidebar = () => {
-        setOpen(false);
-    }
-    const openSidebar = () => {
-      setOpen(true);
+
+
+  const closeSidebar = () => {
+    setOpen(false);
+  }
+
+  const openSidebar = () => {
+    setOpen(true);
   }
 
   useEffect(() => {
